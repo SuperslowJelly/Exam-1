@@ -34,7 +34,7 @@ public class Main {
 
         // Data input.
         fillNames(new String[]{"Elias Barbera", "Justy Pickering", "Bram Andrewson", "Melvin Blanchard", "Joline Outterridge"}); // Input student names here.
-        fillScores(new double[]{9.0, 68.0, 83.5, 45.95, 105.5555555}); // Input equivalent student scores here.
+        fillScores(new double[]{9.0, 68.0, 83.5, 45.95, 105.5555555}); // Input equivalent student scores here. This range of data reflects a variety of possibilities to demonstrate spacing, rounding, etc.
         String header1 = "Name", header2 = "Score", header3 = "Grade"; // Input preferred column headers here.
 
         // Set minimum values of column widths to the length of each header.
@@ -82,7 +82,7 @@ public class Main {
             output.append("─┴─");
             for (byte i = 0; i < gradeWidth; i++) output.append('─');
             output.append("─┘");
-        }
+        } // I don't know if there's a better way to do all this box building stuff, please let me know if there is though :)
 
         System.out.print(output.toString());
     }
